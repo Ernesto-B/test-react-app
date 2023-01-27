@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react';
 import Title from './components/Title.js';
+import Modal from './components/Modal.js'
 
 function App() {
 
@@ -46,6 +47,16 @@ function App() {
           <button onClick={() => {handleClick(event.id)}}>delete event</button>
         </React.Fragment>
       ))}
+
+      {/* <Modal>
+        <h2>10% Off Coupon Code!!</h2>
+        <p>Use the code at chekout.</p>
+      </Modal> */}
+
+      <Modal>
+        <p>lorem ipsum ...</p>
+      </Modal>
+
     </div>
   );
 }
